@@ -75,9 +75,13 @@ WSGI_APPLICATION = 'project3rb.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+     'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'project3rb_db',
+        'USER': 'JermaineMckenna',    # your MySQL username
+        'PASSWORD': 'Morgan7890',     # your MySQL password
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 

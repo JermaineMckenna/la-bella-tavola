@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>La Bella Tavola</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <h1>Welcome to La Bella Tavola</h1>
-    <p>Experience the finest italian cusine in a cozy and elegant at atmosphere. Join us for an unforgettable dining experience.</p>
-    
-</body>
-</html>
+{% extends 'menu/base.html' %}
+
+{% block content %}
+<div class="text-center">
+    <h1>Welcome to La Bella Tavola!</h1>
+    <p>Your cozy Italian restaurant serving authentic Italian dishes.</p>
+    <a class="btn btn-primary m-2" href="{% url 'menu' %}">View Menu</a>
+    <a class="btn btn-success m-2" href="{% url 'booking' %}">Book a Table</a>
+</div>
+{% endblock %}
