@@ -1,4 +1,4 @@
- #body {
+ body#homepage {
 	background-image: url('images/hbanner.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
